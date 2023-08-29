@@ -1,9 +1,69 @@
 <!doctype html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+	<head>
+		<title>Shell - Vous n'avez pas les bases</title>
+	</head>
+	<body>
+		<p>
+		Quelques commandes SHELL basiques:<br><br>
+		
+		pwd - print working directory - afficher le repertoire courant<br>
+		:Elle affichera le chemin complet du repertoire courant dans le terminal.<br><br>
+
+		cd - change directory - changer de repertoire<br>
+		:Change de repertoire courant.<br>
+		Exemple 'cd sous_dossier_du_repertoire_courant/'<br>
+			'cd ..' pour revenir en arriere.<br>
+			'cd /home/thomas/Desktop' accéder au chemin complet.<br><br>
+
+		man - manuel<br>
+		:Accéder au manuel d'une commande shell, de fonctiones en C etc.<br>
+		Exemple 'man cd'.<br><br>
+
+		ls - list<br>
+		:Liste les fichiers et dossiers du repertoire courant en les affichant dans le terminal.<br>
+		Cette commande possede beaucoup d'options, 'man ls' pour en savoir plus.<br>
+		Exemple 'ls --all' permet d'afficher même les fichiers cachés avec un '.' au début!<br><br>
+
+		mkdir - make directory - créer un dossier<br>
+		:Créer un dossier, par exemple "mkdir mon_nom_de_dossier".<br><br>
+
+		touch - créer un fichier<br>
+		:Créer un fichier, par exemple "touch journal.txt" ou "touch mon_programme.c".<br>
+		Beaucoup d'options utiles, 'man touch' pour en savoir plus.<br><br>
+
+		mv - move - déplacer / renommer<br>
+		:Déplacer OU renommer un fichier.<br>
+		Exemple 'mv j09.txt j10.txt' pour renommer.<br>
+		'mv j10.txt mon_dossier/' pour déplacer.<br><br>
+
+		gcc - gnu compiler collection<br>
+		:Compile un programme en C, peu permettre de récupérer un éxécutable.<br>
+		Eexemple 'gcc programme.c -o test', compilera programme.c<br>
+		et donnera un éxécutable s'appelant test.<br><br>
+
+		GIT<br><br>
+
+		git init<br>
+		:initialise un git dans le dossier actuel.<br><br>
+
+		git clone<br>
+		:clone un repertoire git avec le nom de dossier voulu.<br>
+		Eexemple 'git clone lien_du_repetoire mon_dossier'.<br><br>
+
+		git add<br>
+		:ajoute des fichiers à envoyer / modifier dans le repertoire git.<br>
+		Exemple: 'git add mon_programme.c'<br><br>
+
+		git commit<br>
+		:Créer un commit rassemblant tous les modifications sauvegardées avec git add / rm.<br>
+		Exemple 'git commit -m "J'ai ajouté tel fichier qui fait tel chose..."<br>
+		'-m' permet d'ajouter un message à votre commit pour indiquer les changements que vous allez faire.<br><br>
+
+		git push<br>
+		:Envoie le commit pour sauvegarder les modifications et ajouts sur le répértoire git.
+
+
+		</p>
+	</body>
 </html>
