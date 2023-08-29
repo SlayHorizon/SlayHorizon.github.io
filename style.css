@@ -1,0 +1,16 @@
+t1 {
+	color: black;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+kw {
+	color: blue;
+	font-weight: bold;
+}
+
+tab {
+	color: grey;
+	display: inline-block;
+	margin-left: 40px;
+}

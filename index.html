@@ -2,68 +2,60 @@
 <html>
 	<head>
 		<title>Shell - Vous n'avez pas les bases</title>
+		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
+		<t1>Shell - Quelques commandes de bases:</t1><br>
 		<p>
-		Quelques commandes SHELL basiques:<br><br>
-		
-		pwd - print working directory - afficher le repertoire courant<br>
-		:Elle affichera le chemin complet du repertoire courant dans le terminal.<br><br>
+		<kw>pwd</kw> - print working directory - affiche le répertoire courant<br>
+		- Affiche le chemin complet du répertoire courant dans le terminal.<br>
+		- Exemple:<br>
+		<tab>'pwd' == '/home/thomas/projet_web/'</tab><br><br>
 
-		cd - change directory - changer de repertoire<br>
-		:Change de repertoire courant.<br>
-		Exemple 'cd sous_dossier_du_repertoire_courant/'<br>
-			'cd ..' pour revenir en arriere.<br>
-			'cd /home/thomas/Desktop' accéder au chemin complet.<br><br>
+		<kw>cd</kw> - change directory - change de répertoire<br>
+		- Change de répertoire courant.<br>
+		- Exemples:<br>
+		<tab>	'cd sous_dossier_du_repertoire_courant/'<br>
+			'cd ..' pour revenir en arrière.<br>
+			'cd /home/thomas/Desktop' pour accéder au chemin complet.</tab><br><br>
 
-		man - manuel<br>
-		:Accéder au manuel d'une commande shell, de fonctiones en C etc.<br>
-		Exemple 'man cd'.<br><br>
+		<kw>man</kw> - manuel<br>
+		- Accède au manuel d'une commande shell, de fonctiones en C etc.<br>
+		- Attention plusieurs manuels peuvent être disponibles<br>
+		- Exemples:<br>
+		<tab>'man cd'.<br>
+		'man 2 write' pour accéder à la fonction 'write' en C.</tab><br><br>
 
-		ls - list<br>
-		:Liste les fichiers et dossiers du repertoire courant en les affichant dans le terminal.<br>
-		Cette commande possede beaucoup d'options, 'man ls' pour en savoir plus.<br>
-		Exemple 'ls --all' permet d'afficher même les fichiers cachés avec un '.' au début!<br><br>
+		<kw>ls</kw> - list<br>
+		- Liste les fichiers et dossiers du répertoire courant en les affichant dans le terminal.<br>
+		- 'man ls' pour connaître les options.<br>
+		- Exemple:<br>
+		<tab>'ls --all' permet d'afficher les fichiers cachés avec un '.' au début.</tab><br><br>
 
-		mkdir - make directory - créer un dossier<br>
-		:Créer un dossier, par exemple "mkdir mon_nom_de_dossier".<br><br>
+		<kw>mkdir</kw> - make directory<br>
+		- Créer un dossier.<br>
+		- Exemple:<br>
+		<tab>'mkdir mon_nom_de_dossier'</tab><br><br>
 
-		touch - créer un fichier<br>
-		:Créer un fichier, par exemple "touch journal.txt" ou "touch mon_programme.c".<br>
-		Beaucoup d'options utiles, 'man touch' pour en savoir plus.<br><br>
+		<kw>touch</kw><br>
+		- Modifie le temps de modification d'un fichier mais peut aussi servir à en créer un.<br>
+		- Exemple:<br>
+		<tab>'touch journal.txt' créera un fichier nommé 'journal' avec l'extension '.txt'.</tab><br><br>
 
-		mv - move - déplacer / renommer<br>
-		:Déplacer OU renommer un fichier.<br>
-		Exemple 'mv j09.txt j10.txt' pour renommer.<br>
-		'mv j10.txt mon_dossier/' pour déplacer.<br><br>
+		<kw>cat</kw><br>
+		- Affiche le countenu d'un fichier dans le terminal sous forme de texte.<br><br>
 
-		gcc - gnu compiler collection<br>
-		:Compile un programme en C, peu permettre de récupérer un éxécutable.<br>
-		Eexemple 'gcc programme.c -o test', compilera programme.c<br>
-		et donnera un éxécutable s'appelant test.<br><br>
+		<kw>mv</kw> - move - déplacer / renommer<br>
+		- Déplacer OU renommer un fichier.<br>
+		- Exemples:<br>
+		<tab>'mv nom_du_fichier_actuel.txt nouveau_nom.txt' pour renommer.<br>
+		'mv nom_du_fichier.txt mon_dossier/' pour déplacer.</tab><br><br>
 
-		GIT<br><br>
-
-		git init<br>
-		:initialise un git dans le dossier actuel.<br><br>
-
-		git clone<br>
-		:clone un repertoire git avec le nom de dossier voulu.<br>
-		Eexemple 'git clone lien_du_repetoire mon_dossier'.<br><br>
-
-		git add<br>
-		:ajoute des fichiers à envoyer / modifier dans le repertoire git.<br>
-		Exemple: 'git add mon_programme.c'<br><br>
-
-		git commit<br>
-		:Créer un commit rassemblant tous les modifications sauvegardées avec git add / rm.<br>
-		Exemple 'git commit -m "J'ai ajouté tel fichier qui fait tel chose..."<br>
-		'-m' permet d'ajouter un message à votre commit pour indiquer les changements que vous allez faire.<br><br>
-
-		git push<br>
-		:Envoie le commit pour sauvegarder les modifications et ajouts sur le répértoire git.
-
-
+		<kw>gcc</kw> - gnu compiler collection<br>
+		- Compile un programme à partir d'un fichier '.c'.<br>
+		- Eexemple:<br>
+		<tab>'gcc programme.c -o test', compilera programme.c<br>
+		et donnera un éxécutable s'appelant test.</tab><br><br>
 		</p>
 	</body>
 </html>
